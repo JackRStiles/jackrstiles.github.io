@@ -1,0 +1,23 @@
+@use 'mixins';
+
+.button {
+  @include mixins.background;
+  @include mixins.border--none;
+
+  &:hover {
+    @include mixins.background--hover;
+    @include mixins.border--none;
+    text-decoration: none;
+  }
+}
+
+.button.button--accent {
+  @include mixins.background--accent;
+  @include mixins.border--none;
+
+  &:hover {
+    @include mixins.background--accent--darker;
+    @include mixins.border--none;
+    text-decoration: none;
+  }
+}

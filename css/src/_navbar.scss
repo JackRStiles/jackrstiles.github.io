@@ -1,0 +1,43 @@
+@use "mixins";
+
+.navbar {
+  .navbar-brand {
+    @include mixins.font--secondary;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+  }
+
+  .navbar-menu {
+    box-shadow: none;
+    transition: display 0.5s ease-out;
+
+    a {
+      @include mixins.font--secondary;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        @include mixins.font;
+        background: none;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      &.is-active {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        @include mixins.background;
+      }
+
+      .navbar-end {
+        margin-top: 52px;
+      }
+    }
+  }
+
+  .navbar-burger {
+    @include mixins.font--secondary;
+  }
+}

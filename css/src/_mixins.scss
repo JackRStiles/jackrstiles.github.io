@@ -1,0 +1,72 @@
+$primary: #333333;
+$secondary: #f3f4f6;
+$accent: #2ecc71;
+
+@mixin font {
+    color: $primary;
+}
+
+@mixin font--secondary {
+    color: $secondary;
+}
+
+@mixin font--accent {
+    color: $accent;
+}
+
+@mixin background {
+    background-color: $primary;
+}
+
+@mixin background--hover {
+    background-color: lighten($primary, 5%);
+}
+
+@mixin background--light {
+    background-color: $secondary;
+}
+
+@mixin background--accent {
+    background-color: $accent;
+}
+
+@mixin background--accent--darker {
+    background-color: darken($accent, 10%);
+}
+
+@mixin background--faded {
+    background-color: rgba($primary, 0.025);
+}
+
+@mixin background--accent--gradient {
+    background: linear-gradient(
+        to right, 
+        lighten($accent, 10%),
+        $accent        
+      )
+}
+
+@mixin background--hero {
+    background: linear-gradient(
+        to right, 
+        rgba($accent, 0.8), 
+        rgba($accent, 0.8)
+      ),
+      url(../img/hero.jpg);
+}
+
+@mixin image-gradient {
+    background: linear-gradient(
+        to right, 
+        rgba(lighten($accent, 10%), 0.7), 
+        rgba($accent, 0.7)
+      ),;
+}
+
+@mixin border--none {
+    border: none;
+}
+
+@mixin border--light {
+    border-color: $accent;
+}

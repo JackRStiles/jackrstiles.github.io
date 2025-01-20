@@ -1,0 +1,5 @@
+@use 'src/core';    // Body, etc
+@use 'src/navbar';  // Navbar rules
+@use 'src/hero';    // Hero rules
+@use 'src/button';  // Button rules
+@use 'src/helpers'; // Additional classes in the Bulma style

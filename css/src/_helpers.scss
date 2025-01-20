@@ -1,0 +1,30 @@
+@use 'mixins';
+
+.is-256x256 {
+    height: 256px;
+    width: 256px;
+}
+
+.has-shadow {
+    filter: drop-shadow(0 10px 100px rgba(0, 0, 0, 0.1));
+}
+
+.has-shadow--small {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.background-primary {
+    @include mixins.background;
+}
+
+.has-background--faded {
+    @include mixins.background--faded;
+}
+
+.has-background--accent--gradient {
+    @include mixins.background--accent--gradient;
+}
+
+.has-thin-border {
+    border: 1px solid rgba(35, 37, 40, 0.5);
+}

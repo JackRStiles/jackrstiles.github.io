@@ -1,11 +1,329 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Stiles - Full Stack Web Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack Stiles - Full Stack Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
-    
+  <section class="hero is-fullheight">
+    <div class="hero-head">
+      <header class="navbar " role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-item is-size-4 has-text-light">Jack Stiles</span>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+              <a class="navbar-item mx-0" href="#about">About</a>
+              <a class="navbar-item mx-0" href="#skills">Skills</a>
+              <a class="navbar-item mx-0" href="#projects">Projects</a>
+              <a class="navbar-item ml-0" href="#contact">Contact</a>
+            </div>
+          </div>
+      </header>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-1 is-uppercase has-text-light mb-5">Hey, I'm Jack Stiles</h1>
+        <p class="subtitle is-4 has-text-light mb-5">
+          A passionate developer with a knack for crafting elegant solutions
+          and a commitment to delivering accessible user experiences.
+        </p>
+        <!-- <a href="#projects" class="button is-dark pt-3">Projects</a> -->
+      </div>
+    </div>
+    <div class="hero-foot has-text-centered">
+      <a href="#about">
+        <span class="icon is-small bounce my-3">
+          <img src="img/angles-down-solid.svg">
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="section is-medium">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="columns">
+        <div class="column is-flex is-justify-content-center is-align-items-center is-hidden-touch">
+          <figure class="image is-256x256 mr-5">
+            <img src="img/cartoonMe.png" class="is-rounded has-shadow--small"
+              alt="A head and shoulders photo of myself">
+          </figure>
+        </div>
+        <div class="column is-two-thirds has-text-left">
+          <h2 class="title is-2 mb-2">About Me</h2>
+          <p class="mb-3 subtitle">Hey! I'm Jack, a full-stack developer based in Peterborough.</p>
+          <p class="mb-3">I've been coding since 2012 and I'm really passionate about building cool stuff. I love the
+            challenge of problem-solving and the satisfaction of seeing a project come to life. I'm skilled in HTML,
+            CSS, PHP, JavaScript, and SQL, and have experience with React, Node.js, Sass, WordPress, Photoshop, GitHub,
+            and AWS. I'm always eager to learn new things and keep up with the latest tech trends.</p>
+          <p class="mb-3">I believe in building accessible websites and applications that everyone can use, regardless
+            of their abilities. I'm committed to writing clean, well-structured code that is easy to maintain and
+            understand.</p>
+          <p class="mb-3">When I'm not coding, I enjoy spending time with my toddler, playing video games, listening to
+            music, or taking photos. I'm also a big fan of history and figuring out how things work. I believe that
+            having diverse interests helps me to be a more creative and well-rounded developer.</p>
+          <p class="mb-3">Feel free to reach out to me on <a href="https://www.linkedin.com/in/itsjackstiles/"
+              target="_blank">LinkedIn</a> or by <a href="#contact">email</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section is-medium has-background--faded">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="columns">
+        <div class="column">
+          <h2 class="title is-2 mb-2">Skills</h2>
+          <p class="">I have a solid understanding of:</p>
+          <div class="is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-center">
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+              <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+              <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+              <figcaption>PHP</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+              <figcaption>MySQL</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+              <figcaption>Sass</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" />
+              <figcaption>Gulp.js</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+              <figcaption>AWS</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+              <figcaption>Github</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" />
+              <figcaption>Wordpress</figcaption>
+            </figure>
+            <figure class="image is-96x96 m-5">
+              <img src="/img/accessibility.svg" />
+              <figcaption>Accessibility</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="columns mt-6">
+        <div class="column">
+          <p>And I'm honing my knowledge of:</p>
+          <div class="is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-center">
+            <figure class="image is-64x64 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+              <figcaption>React</figcaption>
+            </figure>
+            <figure class="image is-64x64 m-5">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+              <figcaption>Node.js</figcaption>
+            </figure>
+            <figure class="image is-64x64 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+              <figcaption>Express</figcaption>
+            </figure>
+            <figure class="image is-64x64 m-5">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" />
+              <figcaption>NGINX</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section is-medium has-background--accent--gradient">
+    <div class="container has-text-left">
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                <h3 class="mb-2">Liftshare Journey Planner</h3>
+                <p class="mb-2">A copy of Liftshare's route planning application, built as part of a technical task for
+                  Liftshare, using Vue and the Google Maps API.</p>
+                <p>
+                  <a href="https://github.com/JackRStiles/liftshare-journey" target="_blank">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <img src="img/github-brands-solid.svg" alt="">
+                      </span>
+                      <span>
+                        View on Github
+                      </span>
+                    </span>
+                  </a>
+                </p>
+                <p class="mt-3">
+                  <span class="tag is-light">HTML</span>
+                  <span class="tag is-light">CSS</span>
+                  <span class="tag is-light">JavaScript</span>
+                  <span class="tag is-light">Vue.js</span>
+                  <span class="tag is-light">Google Maps</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                <h3 class="mb-2">The Twelve Game</h3>
+                <p class="mb-2">Take turns counting to 12, but only say up to 3 numbers at a time. The player who says
+                  '12' loses. This was my first ever project that used React.</p>
+                <p>
+                  <a href="https://codepen.io/JackRStiles/full/YzXzLPp" target="_blank">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <img src="img/codepen-brands-solid.svg" alt="">
+                      </span>
+                      <span>View on CodePen</span>
+                    </span>
+                  </a>
+                </p>
+
+                <p class="mt-3">
+                  <span class="tag is-light">HTML</span>
+                  <span class="tag is-light">CSS</span>
+                  <span class="tag is-light">JavaScript</span>
+                  <span class="tag is-light">React</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                <div class="card-top">
+                  <h3 class="mb-2">My First Portfolio</h3>
+                  <p class="mb-2">A copy of Liftshare's route planning application, built as part of a technical task
+                    for Liftshare, using Vue and the Google Maps API.</p>
+                  <p>
+                    <a href="https://github.com/JackRStiles/portfolio-website" target="_blank">
+                    <span class="icon-text">
+                      <span class="icon">
+                        <img src="img/github-brands-solid.svg" alt="">
+                      </span>
+                      <span>
+                        View on Github</a>
+                      </span>
+                    </span>
+                    </a>
+                  </p>
+                  <p class="mt-3">
+                    <span class="tag is-light">HTML</span>
+                    <span class="tag is-light">CSS</span>
+                    <span class="tag is-light">JavaScript</span>
+                    <span class="tag is-light">PHP</span>
+                    <span class="tag is-light">Wordpress</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section is-medium has-background--faded">
+    <div class="container">
+      <div class="columns has-text-centered">
+        <div class="column is-three-fifths is-offset-one-fifth">
+          <h2 class="title is-2 mb-2">Contact Me</h2>
+          <p class="subtitle mb-5">
+            I would love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out. 
+            Fill out the form below and I'll get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <form action="https://formcarry.com/s/SpAcFiAXIwE" method="post" class="mb-0">
+                <div class="field">
+                  <label for="name" class="label">Name</label>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="Your name" name="name" required autocomplete="name">
+                  </div>
+                </div>
+                <div class="field mt-5">
+                  <label for="name" class="label ">Email</label>
+                  <div class="control">
+                    <input type="email" class="input" placeholder="Your email address" name="name" required autocomplete="email">
+                  </div>
+                </div>
+                <div class="field mt-5">
+                  <label for="name" class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Your message" name="message" required></textarea>
+                  </div>
+                </div>
+                <div class="field is-grouped is-grouped-right">
+                  <div class="control has-text-right">
+                    <button class="button button--accent is-link mt-2">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section is-small background-primary has-text-centered has-text-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <p>Designed and built by Jack Stiles</p>
+          <p>© 2025 Jack Stiles</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/scripts/main.js"></script>
 </body>
+
 </html>

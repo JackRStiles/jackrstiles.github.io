@@ -1,0 +1,40 @@
+@use 'mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cabin", serif;
+  @include mixins.font;
+}
+
+a {
+    font-weight: 500;
+    @include mixins.font--accent;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    span:hover:not(.icon) {
+        text-decoration: underline;
+    }
+}
+
+figcaption {
+    margin-top: .25em;
+}
+
+// #about .image:before {
+//     content: '';
+//     position:absolute;
+//     top:0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     @include mixins.image-gradient;
+//     z-index: 1;
+//     border-radius: 50%;
+// }
+
